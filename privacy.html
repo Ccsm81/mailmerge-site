@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MailMerge — Privacy Policy</title>
+<style>
+  :root{--bg:#f4f5f8;--panel:#fff;--text:#1c2129;--muted:#5d6675;--line:#e7e9f0;--accent:#4f7cff;--accent2:#7a5cff}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1000px 700px at 84% -16%,rgba(122,92,255,.10),transparent 56%),radial-gradient(820px 600px at -10% 4%,rgba(79,124,255,.08),transparent 52%),var(--bg);
+    color:var(--text);font-family:-apple-system,"Segoe UI",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+  .logo{display:flex;align-items:center;gap:12px;margin-bottom:30px}
+  .badge{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;box-shadow:0 8px 22px rgba(94,140,255,.4)}
+  .badge svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .logo b{font-size:18px;letter-spacing:-.01em}
+  h1{font-size:30px;letter-spacing:-.02em;margin:0 0 6px}
+  .sub{color:var(--muted);margin:0 0 30px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:8px 28px 22px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 14px 36px -16px rgba(16,24,40,.14)}
+  h2{font-size:18px;letter-spacing:-.01em;margin:26px 0 8px}
+  p,li{color:#39414f}
+  a{color:var(--accent)}
+  .pill{display:inline-block;background:rgba(18,160,106,.1);color:#0c7a50;border:1px solid rgba(18,160,106,.25);border-radius:999px;padding:3px 12px;font-size:13px;font-weight:600;margin-bottom:18px}
+  code{background:#eef0f5;border-radius:6px;padding:1px 6px;font-size:13px}
+  .foot{color:var(--muted);font-size:13px;margin-top:30px;text-align:center}
+  .foot a{margin:0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">
+    <span class="badge"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 6 8.5-6"/></svg></span>
+    <b>MailMerge</b>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Last updated: 23 June 2026</p>
+
+  <div class="card">
+    <span class="pill">100% local — your data never reaches us</span>
+    <p>MailMerge is a desktop application that runs entirely on your own computer. We, the developers, operate <strong>no servers</strong> that receive your data. Your contact lists, the emails you write, your attachments and your email-account credentials are processed only on your machine and sent only to the services <em>you</em> choose.</p>
+
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> MailMerge contains no analytics, no telemetry, no tracking, and no “phone-home” of your contacts, messages or usage. We never see your contact list or the content of your emails.</p>
+
+    <h2>Where your data goes</h2>
+    <ul>
+      <li><strong>Your contacts &amp; emails</strong> stay in files on your computer. They are sent only to <strong>your own email provider</strong> (the SMTP server you configure) when you press Send — exactly as if you sent the emails yourself.</li>
+      <li><strong>Inbox sync</strong> connects directly to <strong>your own IMAP inbox</strong> using the credentials you enter, to find replies, bounces and unsubscribes. Nothing from your inbox is sent anywhere else.</li>
+      <li><strong>Email-account password</strong> is stored locally in your operating system’s secure keychain (macOS Keychain / Windows Credential Manager), encrypted by the OS. It is never transmitted to us.</li>
+    </ul>
+
+    <h2>Network connections the app makes</h2>
+    <ul>
+      <li><strong>Your email provider</strong> (SMTP to send, IMAP to scan) — using credentials you enter.</li>
+      <li><strong>Mail-server auto-detection</strong> — to fill in server settings, the app may query Mozilla’s public ISPDB (<code>autoconfig.thunderbird.net</code>) and your email domain’s autoconfig endpoint. Only the domain part of your address is used.</li>
+      <li><strong>Address verification (MX)</strong> — public DNS lookups of recipient <em>domains</em> (not full addresses) to check they can receive mail.</li>
+      <li><strong>License activation</strong> — when you activate or validate your license, the app contacts Lemon Squeezy (our payment/licensing provider) sending only your <strong>license key</strong> and an <strong>anonymous machine identifier</strong> (a one-way hash, not reversible to your identity, your name, or your data).</li>
+    </ul>
+
+    <h2>You are the data controller of your contacts</h2>
+    <p>Because we never receive your contacts, <strong>you</strong> are the controller of the personal data in your lists. You are responsible for having a lawful basis (e.g. consent or legitimate interest under the GDPR) to email the people on your list, and for honouring unsubscribe requests. MailMerge is a tool for legitimate, personalized outreach to your own contacts — not for unsolicited bulk email.</p>
+
+    <h2>Your rights</h2>
+    <p>Since we hold none of your personal data, there is nothing for us to access, export or delete. To remove the app’s local data from your computer, uncheck “Remember settings &amp; password” (which clears the saved settings and keychain entry) and delete the application.</p>
+
+    <h2>Changes &amp; contact</h2>
+    <p>We may update this policy; the date above reflects the latest version. Questions: <a href="mailto:ccsm81@yahoo.com">ccsm81@yahoo.com</a>.</p>
+  </div>
+
+  <div class="foot">
+    <a href="index.html">Home</a> · <a href="terms.html">Terms</a>
+  </div>
+</div>
+</body>
+</html>

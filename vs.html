@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MailMerge vs YAMM vs GMass vs Mailmeteor — honest comparison (2026)</title>
+  <meta name="description" content="An honest comparison of MailMerge, YAMM, GMass and Mailmeteor. The desktop, pay-once, any-SMTP, fully-local alternative to subscription mail-merge tools. Looking for a YAMM, GMass or Mailmeteor alternative? Read this first." />
+  <meta property="og:title" content="MailMerge vs YAMM vs GMass vs Mailmeteor" />
+  <meta property="og:description" content="The pay-once, local, any-provider alternative to subscription mail-merge tools." />
+  <style>
+    :root{--bg:#0e1014;--bg2:#12151c;--panel:#171a21;--line:#262b36;--text:#eef1f6;--muted:#9aa4b4;--accent:#4f8cff;--accent2:#7a5cff;--ok:#3ecf8e;--bad:#ff6b6b;--warn:#ffb454}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,"Segoe UI",Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+    .muted{color:var(--muted)}
+    nav{position:sticky;top:0;background:rgba(14,16,20,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--text)}
+    .logo .mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center}
+    .btn{display:inline-flex;border-radius:10px;padding:11px 20px;font-weight:600;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none}
+    h1{font-size:38px;line-height:1.12;margin:46px 0 10px;letter-spacing:-.02em}
+    @media(max-width:680px){h1{font-size:30px}}
+    .lede{color:var(--muted);font-size:18px;max-width:680px}
+    h2{font-size:26px;margin:48px 0 10px}
+    h3{margin:26px 0 6px;font-size:18px}
+    p{color:#d4d9e4}
+    table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14.5px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    th,td{padding:13px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+    thead th{background:var(--bg2);font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+    thead th:first-child{color:var(--text)}
+    td:first-child{font-weight:600;color:var(--text)}
+    .mm{color:var(--ok);font-weight:600}
+    .yes{color:var(--ok)} .no{color:var(--bad)} .meh{color:var(--warn)}
+    .col-mm{background:rgba(79,140,255,.06)}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0}
+    .card.win{border-color:rgba(79,140,255,.5)}
+    .cta{text-align:center;background:linear-gradient(135deg,rgba(79,140,255,.1),rgba(122,92,255,.1));border:1px solid var(--line);border-radius:16px;padding:40px 22px;margin:50px 0}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13.5px;margin-top:30px}
+    small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <nav><div class="wrap">
+    <a class="logo" href="index.html"><span class="mark">✉︎</span> MailMerge</a>
+    <a class="btn" href="index.html#pricing">Get MailMerge — $39</a>
+  </div></nav>
+
+  <div class="wrap">
+    <h1>MailMerge vs YAMM vs GMass vs Mailmeteor</h1>
+    <p class="lede">An honest comparison — including where the others are genuinely better. If you’re looking for a <b>YAMM, GMass or Mailmeteor alternative</b> that you pay for <b>once</b>, runs on your <b>desktop</b>, works with <b>any email provider</b>, and keeps your contacts <b>on your own computer</b>, this is for you.</p>
+
+    <h2>The comparison at a glance</h2>
+    <table>
+      <thead><tr>
+        <th>&nbsp;</th><th class="col-mm">MailMerge</th><th>YAMM</th><th>GMass</th><th>Mailmeteor</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Pricing model</td><td class="col-mm mm">One-time</td><td>Subscription</td><td>Subscription</td><td>Subscription</td></tr>
+        <tr><td>Typical cost</td><td class="col-mm mm">$39 once</td><td>~$25–50 / year</td><td>~$25 / month</td><td>~$10–30 / month</td></tr>
+        <tr><td>Where it runs</td><td class="col-mm mm">Desktop app</td><td>Gmail / Sheets</td><td>Gmail (browser)</td><td>Gmail / browser</td></tr>
+        <tr><td>Email providers</td><td class="col-mm mm">Any SMTP</td><td>Gmail only</td><td>Gmail only</td><td>Gmail only</td></tr>
+        <tr><td>Where your contacts live</td><td class="col-mm mm">Your computer</td><td>Their cloud</td><td>Their cloud</td><td>Their cloud</td></tr>
+        <tr><td>Needs Google account access</td><td class="col-mm yes">No</td><td class="no">Yes</td><td class="no">Yes</td><td class="no">Yes</td></tr>
+        <tr><td>Open / click tracking</td><td class="meh">No (by design)</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+        <tr><td>Attachments</td><td class="col-mm yes">Yes</td><td class="meh">Limited</td><td class="yes">Yes</td><td class="meh">Limited</td></tr>
+        <tr><td>Works offline / no login</td><td class="col-mm yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+        <tr><td>Platform</td><td class="col-mm mm">Mac &amp; Windows</td><td>Any (web)</td><td>Any (web)</td><td>Any (web)</td></tr>
+      </tbody>
+    </table>
+    <p><small>Competitor prices and features are approximate and change over time — check each vendor’s site for current details. Last reviewed: 2026.</small></p>
+
+    <h2>The honest take on each</h2>
+
+    <div class="card win">
+      <h3>MailMerge — best if you hate subscriptions &amp; value privacy</h3>
+      <p><b>Strengths:</b> pay once (no recurring bill), works with <b>any</b> email provider (not just Gmail), 100% local so your contact list never touches a server, native Mac &amp; Windows app, address validation + export. <b>Where it’s weaker:</b> no open/click tracking (intentionally — that requires a tracking server, which would break the “local” promise), and you send through your own account so deliverability is on you.</p>
+    </div>
+
+    <div class="card">
+      <h3>YAMM (Yet Another Mail Merge)</h3>
+      <p><b>Best for:</b> people fully inside Gmail + Google Sheets who want simple tracking. <b>Trade-offs:</b> Gmail-only, subscription, your data lives in Google’s cloud, and it needs broad access to your Google account.</p>
+    </div>
+
+    <div class="card">
+      <h3>GMass</h3>
+      <p><b>Best for:</b> heavier Gmail senders who want advanced features, automation and detailed analytics. <b>Trade-offs:</b> Gmail-only, monthly subscription that adds up fast, browser-based.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mailmeteor</h3>
+      <p><b>Best for:</b> a clean, simple Gmail mail-merge with tracking. <b>Trade-offs:</b> Gmail-only, subscription, cloud-based.</p>
+    </div>
+
+    <h2>So which should you pick?</h2>
+    <p>If you live entirely in Gmail and you want open/click tracking, YAMM, GMass or Mailmeteor are solid — they’re good products. But if you:</p>
+    <p>• send from <b>Outlook, a custom domain, or anything that isn’t Gmail</b>, or<br>
+       • are tired of <b>paying every month</b> to email from your own account, or<br>
+       • handle <b>sensitive contact lists</b> (clients, candidates, invoices) that shouldn’t sit on someone else’s server —</p>
+    <p>…then a desktop, pay-once, fully-local tool is the better fit. That’s exactly what <b>MailMerge</b> is built for.</p>
+
+    <div class="cta">
+      <h2 style="margin:0 0 8px">Mail merge you own — $39 once</h2>
+      <p class="muted" style="max-width:520px;margin:0 auto 22px">Any email provider. 100% local. No subscription. 30-day money-back guarantee.</p>
+      <a class="btn" href="index.html#pricing" style="padding:14px 26px">See MailMerge →</a>
+    </div>
+  </div>
+
+  <footer><div class="wrap">© 2026 MailMerge · <a href="index.html">Home</a> · Independent comparison; trademarks belong to their owners.</div></footer>
+</body>
+</html>
